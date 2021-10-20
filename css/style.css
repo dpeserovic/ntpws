@@ -55,3 +55,22 @@ footer {
     background-color: #d2b7ee;
     text-align: center;
 }
+.article-news:not(:last-of-type) {
+    border-bottom: 1px solid #000000;
+}
+.title-secondary {
+    color: #000000;
+    text-decoration: underline;
+    padding-left: 5px;
+}
+.img-news {
+    float: left;
+    height: 80px;
+    width: 100px;
+    padding: 5px;
+}
+.date-news {
+    font-style: italic;
+    text-decoration: underline;
+    padding-left: 5px;
+}
