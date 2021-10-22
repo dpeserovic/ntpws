@@ -13,16 +13,9 @@
 </head>
 
 <body>
-    <header>
-        <nav class="nav nav-main">
-            <a href="../index.html" class="link link-main">Home</a>
-            <a href="news.html" class="link link-main">News</a>
-            <a href="#" class="link link-main">Contact</a>
-            <a href="#" class="link link-main">About</a>
-            <a href="#" class="link link-main">Gallery</a>
-        </nav>
-        <img src="../assets/images/banner.jpg" alt="banner" class="img img-header">
-    </header>
+    <?php
+        include('../components/header.php');
+    ?>
     <main>
         <h1>NEWS</h1>
         <article class="article article-news">
@@ -56,8 +49,7 @@
                 turpis massa sed elementum. Id velit ut tortor pretium viverra. Adipiscing bibendum est ultricies
                 integer quis auctor elit sed. Dignissim suspendisse in est ante in nibh mauris. Enim ut tellus elementum
                 sagittis. Sodales neque sodales ut etiam sit amet. Egestas quis ipsum suspendisse ultrices gravida
-                dictum fusce ut. Amet consectetur adipiscing elit ut aliquam purus sit amet luctus. <a href="#"
-                    target="_blank">Read more...</a>
+                dictum fusce ut. Amet consectetur adipiscing elit ut aliquam purus sit amet luctus. <a href="#" target="_blank">Read more...</a>
             </p>
             Date: <span class="date date-news">20.10.2021.</span>
         </article>
@@ -105,20 +97,14 @@
                 viverra nibh cras pulvinar mattis. Amet nulla facilisi morbi tempus. Diam sollicitudin tempor id eu.
                 Facilisis sed odio morbi quis commodo. Sed libero enim sed faucibus. Volutpat ac tincidunt vitae semper.
                 Cras fermentum odio eu feugiat. Sagittis eu volutpat odio facilisis mauris sit amet. Eu volutpat odio
-                facilisis mauris. Pharetra convallis posuere morbi leo urna molestie at elementum. <a href="#"
-                    target="_blank">Read more...</a>
+                facilisis mauris. Pharetra convallis posuere morbi leo urna molestie at elementum. <a href="#" target="_blank">Read more...</a>
             </p>
             Date: <span class="date date-news">20.10.2021.</span>
         </article>
     </main>
-    <footer>
-        <span>Copyright &copy;
-            <script>document.write(new Date().getFullYear())</script> Dario Pešerović
-            <a href="https://github.com/dpeserovic" target="_blank">
-                <img src="../assets/images/GitHub-Mark-32px.png" alt="github" class="img" />
-            </a>
-        </span>
-    </footer>
+    <?php
+        include('../components/footer.php');
+    ?>
 </body>
 
 </html>

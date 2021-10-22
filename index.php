@@ -13,16 +13,9 @@
 </head>
 
 <body>
-    <header>
-        <nav class="nav nav-main">
-            <a href="index.html" class="link link-main">Home</a>
-            <a href="pages/news.html" class="link link-main">News</a>
-            <a href="#" class="link link-main">Contact</a>
-            <a href="#" class="link link-main">About</a>
-            <a href="#" class="link link-main">Gallery</a>
-        </nav>
-        <img src="assets/images/banner.jpg" alt="banner" class="img img-header">
-    </header>
+    <?php
+        include('components/header.php');
+    ?>
     <main>
         <article>
             <h1>Lorem ipsum</h1>
@@ -96,14 +89,9 @@
             </p>
         </article>
     </main>
-    <footer>
-        <span>Copyright &copy;
-            <script>document.write(new Date().getFullYear())</script> Dario Pešerović
-            <a href="https://github.com/dpeserovic" target="_blank">
-                <img src="assets/images/GitHub-Mark-32px.png" alt="github" class="img" />
-            </a>
-        </span>
-    </footer>
+    <?php
+        include('components/footer.php');
+    ?>
 </body>
 
 </html>
