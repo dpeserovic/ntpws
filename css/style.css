@@ -1,76 +1,125 @@
-html,
-body {
+/*
+COLOR SCHEME:
+Dark Cornflower Blue #17408b
+White #ffffff
+Philippine Red #c9082a
+*/
+
+/* <global> */
+html, body {
   height: 100%;
   width: 100%;
-  margin: 0px;
-  padding: 0px
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', serif;
 }
+/* </global> */
+
+/* <header> */
 .nav-main {
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    background-color: #e82f41;
+    background-color: #c9082a;
     text-align: center;
     word-spacing: 20px;
     font-size: 40px;
     width: 100%;
 }
 .link-main {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
 }
-.img-header {
+.img-banner {
     position: static;
     height: 500px;
     width: 100%;
 }
+/* </header> */
+
+/* <index> */
 main {
     top: 0;
 }
-h1 {
-    text-align: center;
-}
-figure {
-    float: left;
-    width: 250px;
-    border: 1px solid #000000;
-    margin-top: 0;
-    padding: 5px;
-}
-figcaption {
-    font-style: italic;
-}
-.img-article {
-    height: 250px;
-    width: 250px;
-}
+/* </index> */
+
+/* <footer> */
 footer {
     position: sticky;
     right: 0;
     left: 0;
     bottom: 0;
-    color: #e82f41;
+    background-color: #17408b;
+    color: #ffffff;
     font-weight: bold;
-    background-color: #d2b7ee;
     text-align: center;
+}
+/* </footer> */
+
+/* <home> */
+.title-primary-home {
+    color: #17408b;
+    font-size: 200%;
+    text-align: center;
+}
+.figure-home {
+    float: left;
+    width: 200px;
+    border: 1px solid #000000;
+    padding: 5px;
+    margin-top: 0;
+}
+.img-home {
+    height: 400px;
+    width: 200px;
+}
+.figcaption-home {
+    font-style: italic;
+}
+.ul-home {
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+/* </home> */
+
+/* <news> */
+.title-primary-news {
+    color: #17408b;
+    font-size: 200%;
+    text-align: center;
+}
+.article-news {
+    height: 150px;
 }
 .article-news:not(:last-of-type) {
     border-bottom: 1px solid #000000;
 }
-.title-secondary {
-    color: #000000;
+.title-secondary-news {
+    color: #c9082a;
     text-decoration: underline;
     padding-left: 5px;
 }
 .img-news {
     float: left;
-    height: 80px;
-    width: 100px;
+    height: 100px;
+    width: 150px;
     padding: 5px;
 }
 .date-news {
     font-style: italic;
     text-decoration: underline;
     padding-left: 5px;
+}
+/* </news> */
+
+.img-under-construction {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
