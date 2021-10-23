@@ -19,24 +19,29 @@
     <main>
         <?php
         $route = isset($_GET['page']) ? $_GET['page'] : 'home';
+        $article = isset($_GET['article']) ? $_GET['article'] : null;
         switch ($route) {
             case 'home':
-                include('pages/home.php');
+                include('pages/home.html');
                 break;
             case 'news':
-                include('pages/news.php');
+                if (!isset($article)) {
+                    include('pages/news.html');
+                } else {
+                    include('pages/news-article.php');
+                }
                 break;
             case 'contact':
-                include('pages/contact.php');
+                include('pages/contact.html');
                 break;
             case 'about':
-                include('pages/about.php');
+                include('pages/about.html');
                 break;
             case 'gallery':
-                include('pages/gallery.php');
+                include('pages/gallery.html');
                 break;
             default:
-                include('pages/home.php');;
+                include('pages/home.html');
         }
         ?>
     </main>

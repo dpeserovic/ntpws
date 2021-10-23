@@ -20,6 +20,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Times New Roman', serif;
+  font-size: 20px;
 }
 /* </global> */
 
@@ -73,14 +74,14 @@ footer {
 }
 .figure-home {
     float: left;
-    width: 200px;
+    width: 250px;
     border: 1px solid var(--black);
     padding: 5px;
     margin-top: 0;
 }
 .img-home {
     height: 400px;
-    width: 200px;
+    width: 250px;
 }
 .figcaption-home {
     font-style: italic;
@@ -114,7 +115,7 @@ footer {
 }
 .img-news {
     float: left;
-    height: 100px;
+    height: 90px;
     width: 150px;
     padding: 5px;
 }
@@ -124,6 +125,33 @@ footer {
     padding-left: 5px;
 }
 /* </news> */
+
+/* <news-article> */
+.figure-news-article {
+    float: left;
+    border: 1px solid var(--black);
+    padding: 5px;
+    margin-top: 0;
+}
+.ul-news-article {
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.ul-news-article li {
+    display: inline;
+    color: var(--red);
+}
+.title-primary-news-article {
+    color: var(--blue)
+}
+.title-secondary-news-article {
+    color: var(--blue)
+}
+/* </news-article> */
 
 .img-under-construction {
     display: block;
