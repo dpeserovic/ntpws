@@ -32,7 +32,7 @@
                 }
                 break;
             case 'contact':
-                include('pages/contact.html');
+                include('pages/contact.php');
                 break;
             case 'about':
                 include('pages/about.html');

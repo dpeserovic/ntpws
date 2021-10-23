@@ -50,6 +50,7 @@ html, body {
 /* <index> */
 main {
     top: 0;
+    margin-bottom: 40px;
 }
 /* </index> */
 
@@ -102,12 +103,6 @@ footer {
     font-size: 200%;
     text-align: center;
 }
-.article-news {
-    height: 150px;
-}
-.article-news:not(:last-of-type) {
-    border-bottom: 1px solid var(--black);
-}
 .title-secondary-news {
     color: var(--red);
     text-decoration: underline;
@@ -133,6 +128,11 @@ footer {
     padding: 5px;
     margin-top: 0;
 }
+.img-news-article {
+    position: static;
+    height: 500px;
+    width: 100%;
+}
 .ul-news-article {
     font-style: normal;
     font-weight: bold;
@@ -152,6 +152,27 @@ footer {
     color: var(--blue)
 }
 /* </news-article> */
+
+/* <contact> */
+.iframe-contact {
+    height: 500px;
+    width: 100%
+}
+.container-contact {
+    border-radius: 5px;
+    padding: 20px;
+}
+.input-contact, .select-contact, .textarea-contact {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+/* </contact> */
 
 .img-under-construction {
     display: block;
