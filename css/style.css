@@ -191,6 +191,14 @@ footer {
 }
 /* </gallery> */
 
+/* <about> */
+.video-about {
+    width: 50%;
+    height: 500px;
+    float: left;
+}
+/* </about> */
+
 .img-under-construction {
     display: block;
     margin-left: auto;
