@@ -40,6 +40,9 @@
             case 'gallery':
                 include('pages/gallery.html');
                 break;
+            case 'register':
+                include('pages/register.php');
+                break;
             default:
                 include('pages/home.html');
         }

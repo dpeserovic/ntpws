@@ -1,5 +1,5 @@
 <?php
-$menu = array('home', 'news', 'contact', 'about', 'gallery');
+$menu = array('home', 'news', 'contact', 'about', 'gallery', 'register');
 ?>
 <header>
     <nav class="nav nav-main">
