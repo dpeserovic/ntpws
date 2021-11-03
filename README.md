@@ -12,3 +12,4 @@
     * task 9 - create about us template ✔️
 * PHP & MySQL
     * task 1 - componentize reusable content ✔️
+    * task 2 - create db, implement table for users and countries, connect to db, seed countries and populate country dropdown, create register template ✔️
