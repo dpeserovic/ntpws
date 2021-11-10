@@ -1,5 +1,9 @@
 <?php
-$menu = array('home', 'news', 'contact', 'about', 'gallery', 'register');
+if (isset($_SESSION['user'])) {
+    $menu = array('home', 'news', 'contact', 'about', 'gallery', 'dashboard', 'logout');
+} else {
+    $menu = array('home', 'news', 'contact', 'about', 'gallery', 'register', 'login');
+}
 ?>
 <header>
     <nav class="nav nav-main">
