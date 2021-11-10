@@ -22,6 +22,9 @@ html, body {
   font-family: 'Times New Roman', serif;
   font-size: 20px;
 }
+.small-error {
+    color: var(--red);
+}
 /* </global> */
 
 /* <header> */
@@ -165,7 +168,7 @@ footer {
 .input-contact, .select-contact, .textarea-contact {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--black);
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
@@ -203,7 +206,7 @@ footer {
 .input-register, .select-register {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--black);
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
@@ -211,6 +214,39 @@ footer {
     resize: vertical;
 }
 /* </regiser> */
+
+/* <register-success> */
+.container-success-register {
+    text-align: center;
+}
+.title-primary-success-register {
+    color: var(--blue);
+    font-size: 200%;
+}
+.img-success-register {
+    margin: 10px;
+}
+/* </register-success> */
+
+/* <login> */
+.container-login {
+    text-align: center;
+}
+.title-primary-login {
+    color: var(--blue);
+    font-size: 200%;
+}
+.input-login {
+    width: 25%;
+    padding: 12px;
+    border: 1px solid var(--black);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+/* </login> */
 
 .img-under-construction {
     display: block;

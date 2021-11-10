@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,6 +43,18 @@
                 break;
             case 'register':
                 include('pages/register.php');
+                break;
+            case 'success-register':
+                include('pages/success-register.php');
+                break;
+            case 'login':
+                include('pages/login.php');
+                break;
+            case 'dashboard':
+                include('pages/dashboard.php');
+                break;
+            case 'logout':
+                include('pages/logout.php');
                 break;
             default:
                 include('pages/home.html');

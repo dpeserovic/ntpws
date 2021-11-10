@@ -9,17 +9,19 @@ class Configuration
 
 class User
 {
-    public $id = 'N/A';
-    public $name = 'N/A';
-    public $surname = 'N/A';
-    public $email = 'N/A';
-    public $country = 'N/A';
-    public $city = 'N/A';
-    public $street = 'N/A';
-    public $dob = 'N/A';
-    public $password = 'N/A';
+    public $id;
+    public $name;
+    public $surname;
+    public $email;
+    public $country;
+    public $city;
+    public $street;
+    public $dob;
+    public $password;
+    public $role = '0';
+    public $isApproved = 0;
 
-    public function __construct($id = null, $name = null, $surname = null, $email = null, $country = null, $city = null, $street = null, $dob = null, $password = null)
+    public function __construct($id = null, $name = null, $surname = null, $email = null, $country = null, $city = null, $street = null, $dob = null, $password = null, $role = null, $isApproved = null)
     {
         if ($id) $this->id = $id;
         if ($name) $this->name = $name;
@@ -30,19 +32,21 @@ class User
         if ($street) $this->street = $street;
         if ($dob) $this->dob = $dob;
         if ($password) $this->password = $password;
+        if ($role) $this->role = $role;
+        if ($isApproved) $this->isApproved = $isApproved;
     }
 }
 
 class Country
 {
     public $id = 'N/A';
-    public $county_code = 'N/A';
+    public $country_code = 'N/A';
     public $country_name = 'N/A';
 
-    public function __construct($id = null, $county_code = null, $country_name = null)
+    public function __construct($id = null, $country_code = null, $country_name = null)
     {
         if ($id) $this->id = $id;
-        if ($county_code) $this->county_code = $county_code;
+        if ($country_code) $this->country_code = $country_code;
         if ($country_name) $this->country_name = $country_name;
     }
 }
