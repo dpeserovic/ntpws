@@ -226,6 +226,8 @@ function edit($newsId, $shouldEdit, $title, $text, $oConnection)
 function deleteArticle($newsId, $oConnection)
 {
     try {
+        $queryDeleteImage = 'DELETE FROM images WHERE articleId = ' . $newsId;
+        $oConnection->query($queryDeleteImage);
         $query = 'DELETE FROM news WHERE id = ' . $newsId;
         $oConnection->query($query);
         header('location:../index.php?page=dashboard&tab=edit');
