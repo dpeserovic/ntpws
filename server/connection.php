@@ -1,6 +1,5 @@
 <?php
 include 'classes.php';
-
 $oConfig = new Configuration();
 
 $oConnection = new mysqli($oConfig->host, $oConfig->username, $oConfig->password, $oConfig->dbName);

@@ -1,4 +1,7 @@
-<?php session_start() ?>
+<?php
+include 'server/classes.php';
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,6 +13,7 @@
     <meta name="keywords" content="advanced web service design">
     <meta name="author" content="Dario Pešerović">
     <title>NTPWS</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -27,7 +31,7 @@
                 break;
             case 'news':
                 if (!isset($article)) {
-                    include('pages/news.html');
+                    include('pages/news.php');
                 } else {
                     include('pages/news-article.php');
                 }
@@ -40,6 +44,9 @@
                 break;
             case 'gallery':
                 include('pages/gallery.html');
+                break;
+            case 'api':
+                include('pages/api.php');
                 break;
             case 'register':
                 include('pages/register.php');

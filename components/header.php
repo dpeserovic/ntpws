@@ -1,8 +1,8 @@
 <?php
 if (isset($_SESSION['user'])) {
-    $menu = array('home', 'news', 'contact', 'about', 'gallery', 'dashboard', 'logout');
+    $menu = array('home', 'news', 'contact', 'about', 'gallery', 'api', 'dashboard', 'logout');
 } else {
-    $menu = array('home', 'news', 'contact', 'about', 'gallery', 'register', 'login');
+    $menu = array('home', 'news', 'contact', 'about', 'gallery', 'api', 'register', 'login');
 }
 ?>
 <header>
