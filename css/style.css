@@ -11,6 +11,7 @@ Black #000000
     --white: #ffffff;
     --red: #c9082a;
     --black: #000000;
+
 }
 
 /* <global> */
@@ -42,6 +43,9 @@ html, body {
 .link-main {
     color: var(--white);
     text-decoration: none;
+}
+.link-main:hover {
+    color: var(--blue)
 }
 .img-banner {
     position: static;
@@ -149,10 +153,11 @@ footer {
     color: var(--red);
 }
 .title-primary-news-article {
-    color: var(--blue)
+    color: var(--blue);
+    text-align: center;
 }
 .title-secondary-news-article {
-    color: var(--blue)
+    color: var(--blue);
 }
 /* </news-article> */
 
@@ -193,6 +198,27 @@ footer {
     color: var(--red);
 }
 /* </gallery> */
+
+/* <api> */
+.title-primary-api {
+    color: var(--blue);
+    font-size: 200%;
+    text-align: center;
+}
+.title-secondary-api {
+    color: var(--blue);
+    text-align: center;
+}
+.ul-api {
+    color: var(--blue);
+    text-align: center;
+    list-style-type: none;
+    font-size: 25px;
+}
+.ul-api li:not(:last-child) { 
+    margin-bottom: 10px;  
+ }
+/* </api> */
 
 /* <about> */
 .video-about {
@@ -247,6 +273,158 @@ footer {
     resize: vertical;
 }
 /* </login> */
+
+/* <dashboard> */
+.container-dashboard {
+    text-align: center;
+    font-weight: bold;
+}
+.title-primary-dashboard {
+    color: var(--blue);
+    font-size: 200%;
+}
+/* </dashboard> */
+
+/* <dashboard-tabs> */
+.link-dashboard-tabs {
+    background: var(--red);
+    color: var(--white);
+    display: inline;
+    margin-right: 5em;
+    padding: 10px;
+    text-decoration: none;
+}
+.link-dashboard-tabs:hover {
+    color: var(--blue);
+}
+/* </dashboard-tabs> */
+
+/* <profile-tab> */
+.title-primary-profile-tab {
+    color: var(--red);
+    font-size: 200%;
+    text-align: center;
+    text-decoration: underline;
+}
+.ul-profile-tab {
+    color: var(--blue);
+    text-align: center;
+    list-style-type: none;
+}
+.li-profile-tab:not(:last-child) {
+    margin-bottom: 1em;
+}
+/* </profile-tab> */
+
+/* <create-tab> */
+.title-primary-create-tab {
+    color: var(--red);
+    font-size: 200%;
+    text-align: center;
+    text-decoration: underline;
+}
+.form-create-tab {
+    color: var(--blue);
+}
+.input-create-tab, .textarea-create-tab {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid var(--black);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 12px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+.button-create-tab {
+    border: 0;
+    color: var(--white);
+    font-weight: bold;
+    background-color: var(--blue);
+    height: 50px;
+    width: 100px;
+}
+.button-create-tab:hover {
+    color: var(--red);
+    cursor: pointer;
+}
+/* </create-tab> */
+
+/* <edit-tab> */
+.title-primary-edit-tab {
+    color: var(--red);
+    font-size: 200%;
+    text-align: center;
+    text-decoration: underline;
+}
+.table-edit-tab {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 30px;
+    color: var(--blue);
+}
+.button-edit-tab {
+    border: 0;
+    color: var(--white);
+    font-weight: bold;
+    background-color: var(--blue);
+    height: 25px;
+    width: 75px;
+}
+.button-edit-tab:hover {
+    color: var(--red);
+    cursor: pointer;
+}
+/* <edit-article> */
+.title-primary-edit-article {
+    color: var(--red);
+    font-size: 200%;
+    text-align: center;
+    text-decoration: underline;
+}
+.button-edit-article {
+    border: 0;
+    color: var(--white);
+    font-weight: bold;
+    background-color: var(--blue);
+    height: 50px;
+    width: 100px;
+}
+.button-edit-article:hover {
+    color: var(--red);
+    cursor: pointer;
+}
+/* </edit-article> */
+/* </edit-tab> */
+
+/* <users-tab> */
+.title-primary-users-tab {
+    color: var(--red);
+    font-size: 200%;
+    text-align: center;
+    text-decoration: underline;
+}
+.table-users-tab {
+    width: 75%;
+    color: var(--blue);
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 30px;
+}
+.button-users-tab {
+    border: 0;
+    color: var(--white);
+    font-weight: bold;
+    background-color: var(--blue);
+    height: 25px;
+    width: 80px;
+}
+.button-users-tab:hover {
+    color: var(--red);
+    cursor: pointer;
+}
+/* </users-tab> */
 
 .img-under-construction {
     display: block;
